@@ -1,28 +1,35 @@
 import React from "react";
 import  ReactDOM from "react-dom/client";
 
-//react.createElement => object => HTML element (rendering)
-//jSX .................JSX is just a syntax but react element is an object
-//jsx => react.createElement => Html element
+//making a header component/ functional component-react component
+/**
+ * logo inside header div
+ * navigation bar
+ */
 
-const jsxHeading = <h1 id="heading">Hello world!</h1>;
-//const root = ReactDOM.createRoot(document.getElementById("root"));
-//root.render(jsxHeading);
+const Header = () => (
+    <div className="header">
+        <div className="logo-container">
+            <img className="logo" src="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png"></img>
+            </div>
 
-//React functional component
-//making another component and trying to render in headingComponent
-//component composition
-const Apple = () => (
-    <h2>Apple is red in color
-</h2>
-);
+            <div className="navigation-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Offers</li>
+                      <li>Cart</li>
+                </ul>
 
-const HeadingComponent = () => (
-    <div id="container">
-        <Apple />
-        <h1>Namaste React</h1>
+            </div>
     </div>
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(<HeadingComponent />);
+//making a app layout component/ react componenet
+
+const AppLayout = () => (
+    <div id="app">
+
+    </div>
+);
+
