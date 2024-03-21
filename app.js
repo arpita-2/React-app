@@ -33,22 +33,23 @@ const Header = () => (
  * about the food, whether it is chinese or indian etc.
  */
 //making a restaurant card component to reuse it again and again
-const RestaurantCard = () => (
+const RestaurantCard = (props) => (
     <div className="res-card">
         <img className="res-img"
         alt="res-img"
         src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e4wujbtpzue93pz3fnrm">
 
         </img>
-    <h3>Meghana Foods</h3>
-    <h4>4.9</h4>
-    <h4>50-55 mins</h4>
-    <h4>Biryani, North Indian Cuisine</h4>
+    <h3>{props.resName}</h3>
+    <h4>{props.rating}</h4>
+    <h4>{props.time}</h4>
+    <h4>{props.cuisine}</h4>
     </div>
 );
 
 
 //making a body
+//making dynamic  restaurant card 
 
 const Body = () => (
 <div className="body">
@@ -57,7 +58,14 @@ const Body = () => (
     </div>
 
     <div className="restaurant-container">
-    {RestaurantCard()}
+    <RestaurantCard
+    resName = "Meghana Foods" rating="4.7" time = "50-55 mins"
+    cuisine = "Biryani, North Indian" />
+
+<RestaurantCard 
+resName = "KFC" rating="4.4" time = "25-30 mins"
+    cuisine = "Burger, Fries, Fried Chicken"/>
+
     </div>
 </div>
 )
