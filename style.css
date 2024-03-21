@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+/*display: flex has divided the right and left side of the div*/
+/*justify-content: space between to move the other div to the exactly right side*/
+
+.logo {
+    width: 100px;
+}
+/*squuezing the size of the logo*/
+
+.navigation-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 22px;
+    
+}
+/*display: flex to show items name horizontally*/
+/*list style none because to remove the dots*/
+
+.navigation-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+/*display: flex has divided the right and left side of the div*/
+
