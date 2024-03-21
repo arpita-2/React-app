@@ -28,8 +28,12 @@ const Header = () => (
 //making a app layout component/ react componenet
 
 const AppLayout = () => (
-    <div id="app">
+    <div className="app">
+        {Header()}
 
     </div>
 );
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
 
