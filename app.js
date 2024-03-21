@@ -10,7 +10,7 @@ import  ReactDOM from "react-dom/client";
 const Header = () => (
     <div className="header">
         <div className="logo-container">
-            <img className="logo" src="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png"></img>
+            <img className="logo" src="https://image.similarpng.com/very-thumbnail/2021/09/Good-food-logo-design-on-transparent-background-PNG.png"></img>
             </div>
 
             <div className="navigation-items">
