@@ -25,11 +25,49 @@ const Header = () => (
     </div>
 );
 
+/**
+ * Restaurant card
+ * -img
+ * -name of restro
+ * star rating with time
+ * about the food, whether it is chinese or indian etc.
+ */
+//making a restaurant card component to reuse it again and again
+const RestaurantCard = () => (
+    <div className="res-card">
+        <img className="res-img"
+        alt="res-img"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e4wujbtpzue93pz3fnrm">
+
+        </img>
+    <h3>Meghana Foods</h3>
+    <h4>4.9</h4>
+    <h4>50-55 mins</h4>
+    <h4>Biryani, North Indian Cuisine</h4>
+    </div>
+);
+
+
+//making a body
+
+const Body = () => (
+<div className="body">
+    <div className="search">
+        search
+    </div>
+
+    <div className="restaurant-container">
+    {RestaurantCard()}
+    </div>
+</div>
+)
+
 //making a app layout component/ react componenet
 
 const AppLayout = () => (
     <div className="app">
         {Header()}
+        {Body()}
 
     </div>
 );
