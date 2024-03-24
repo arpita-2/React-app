@@ -1,5 +1,7 @@
 import React from "react";
 import  ReactDOM from "react-dom/client";
+import { useState } from "react";
+
 
 //making a header component/ functional component-react component
 /**
@@ -2037,6 +2039,9 @@ const Body = () => (
 <div className="body">
     <div className="search">
         search
+    </div>
+    <div className="btn">
+      <button className="btn-filter" onClick={}>Top Rated Restaurants</button>
     </div>
 
     <div className="restaurant-container">
