@@ -1,3 +1,6 @@
+/*----------------------------header----------------------------------------------*/
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +26,36 @@
 .navigation-items > ul > li {
     padding: 10px;
     margin: 10px;
+}
+
+/*------------------restaurant card-----------------------------------------------------------------------*/
+
+.res-card {
+    width: 200px;
+    padding: 5px;
+    line-height: 15px;
+    
+    
+}
+
+.res-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.res-img {
+    width: 200px;
+    height: 150px;
+    
+}
+
+.restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*---------------------------body--------------------------------------------------------------------*/
+.search {
+    padding: 10px;
 }
 /*display: flex has divided the right and left side of the div*/
 
